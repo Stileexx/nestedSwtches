@@ -6,6 +6,7 @@ public class NestedCase {
         int employerID = input.nextInt();
         String department = input.next();
 
+/*
         switch (employerID) {
             case 1:
                 System.out.println("Steven Utcke");
@@ -19,8 +20,8 @@ public class NestedCase {
                     case "IT":
                         System.out.println("IT Department");
                         break;
-                    case "Managment":
-                        System.out.println("Managment Department");
+                    case "Management":
+                        System.out.println("Management Department");
                         break;
                     default:
                         System.out.println("Not a valid department!");
@@ -28,6 +29,22 @@ public class NestedCase {
                 break;
             default:
                 System.out.println("Not a valid Employed ID!");
+        }
+*/
+        //better way to write:
+
+        switch (employerID) {
+            case 1 -> System.out.println("Steven Utcke");
+            case 2 -> System.out.println("Slawa Suppes");
+            case 3 -> {
+                System.out.println("Nick Stettnisch");
+                switch (department) {
+                    case "IT" -> System.out.println("IT Department");
+                    case "Management" -> System.out.println("Management Department");
+                    default -> System.out.println("Not a valid department!");
+                }
+            }
+            default -> System.out.println("Not a valid Employed ID!");
         }
     }
 }
