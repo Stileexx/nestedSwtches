@@ -36,7 +36,7 @@ public class Casing {
 
         //Normal Switch Statement
         switch (day) {
-            case 1:
+              case 1:
             case 2:
             case 3:
             case 4:

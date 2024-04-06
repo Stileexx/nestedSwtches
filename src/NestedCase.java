@@ -6,7 +6,7 @@ public class NestedCase {
         int employerID = input.nextInt();
         String department = input.next();
 
-/*
+
         switch (employerID) {
             case 1:
                 System.out.println("Steven Utcke");
@@ -30,7 +30,7 @@ public class NestedCase {
             default:
                 System.out.println("Not a valid Employed ID!");
         }
-*/
+
         //better way to write:
 
         switch (employerID) {
