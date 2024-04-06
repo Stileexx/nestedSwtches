@@ -3,8 +3,21 @@ import java.util.Scanner;
 public class Sum {
     public static void main(String[] args) {
 
-        sum();
+        int answer = sum2();
 
+    }
+
+    static int sum2() {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the first number: ");
+        int num1 = in.nextInt();
+
+        System.out.println("Enter second number: ");
+        int num2 = in.nextInt();
+
+        int sum = num1 + num2;
+        return sum;
     }
 
     static void sum() {
