@@ -3,8 +3,15 @@ import java.util.Scanner;
 public class Sum {
     public static void main(String[] args) {
 
-        int answer = sum2();
+        int answer = sum3(20, 30);
+        System.out.println(answer);
 
+    }
+
+    //pass the value of nums when you are calling main() method
+    static int sum3 (int a, int b) {
+        int sum = a + b;
+        return sum;
     }
 
     static int sum2() {
